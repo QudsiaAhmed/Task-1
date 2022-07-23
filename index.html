@@ -5,86 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@300&family=Edu+TAS+Beginner:wght@500&display=swap"
-        rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Hahmlet' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Task1</title>
+    <title>Task 1</title>
 
     <audio autoplay loop>
         <source src="Clock-Ticking-C-www.fesliyanstudios.com.mp3" type="audio/mpeg">
     </audio>
-
-    <!-- <iframe src="Clock-Ticking-C-www.fesliyanstudios.com.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-    </iframe>  -->
-
 </head>
 
 <body>
-    <div class="headings">
-        <h1 class="h"><span>Analog Clock</span></h1>
+    <div class="inner">
+        <h1 style="font-family:'Hahmlet';">Digital & Analog Clock</h1>
     </div>
-    <div class="container">
-        <div class="frame1">
-            <div class="frame2">
-                <div class="clock">
-                    <div class="hand hour"></div>
-                    <div class="hand min"></div>
-                    <div class="hand sec"></div>
-                    <div class="time time1">1</div>
-                    <div class="time time2">2</div>
-                    <div class="time time3">3</div>
-                    <div class="time time4">4</div>
-                    <div class="time time5">5</div>
-                    <div class="time time6">6</div>
-                    <div class="time time7">7</div>
-                    <div class="time time8">8</div>
-                    <div class="time time9">9</div>
-                    <div class="time time10">10</div>
-                    <div class="time time11">11</div>
-                    <div class="time time12">12</div>
+    <!-- Analog Clock -->
+    <div class="outer">
+
+
+        <div class="container">
+            <div class="clock">
+                <div class="c" id="sc" style="--clr:#04fc43"><i></i></div>
+                <div class="c c2" id="mn" style="--clr:#fee800"><i></i></div>
+                <div class="c c3" id="hr" style="--clr:#ff2972"><i></i></div>
+                <span class="a1" style="--i:1;"><b>1</b></span>
+                <span class="a1" style="--i:2;"><b>2</b></span>
+                <span class="a1" style="--i:3;"><b>3</b></span>
+                <span class="a1" style="--i:4;"><b>4</b></span>
+                <span class="a1" style="--i:5;"><b>5</b></span>
+                <span class="a1" style="--i:6;"><b>6</b></span>
+                <span class="a1" style="--i:7;"><b>7</b></span>
+                <span class="a1" style="--i:8;"><b>8</b></span>
+                <span class="a1" style="--i:9;"><b>9</b></span>
+                <span class="a1" style="--i:10;"><b>10</b></span>
+                <span class="a1" style="--i:11;"><b>11</b></span>
+                <span class="a1" style="--i:12;"><b>12</b></span>
+
+            </div>
+
+
+        </div>
+        <h1 class="analog-clock">Analog Clock</h1>
+
+    </div>
+
+
+    <!-- Digital clock -->
+  
+
+
+        <div id="sub-inner">
+            <div id="time">
+                <div class="circle" style="--clr: #ff2972">
+                    <div class="dots hr_dot"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="hh"></circle>
+
+                    </svg>
+                    <div id="hours" style="font-family: 'Qwigley';">00</div>
                 </div>
-                <div class="handle"></div>
+
+                <div class="circle" style="--clr: #fee800">
+                    <div class="dots min_dot"></div>
+
+
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="mm"></circle>
+
+                    </svg>
+
+                    <div id="minutes" style="font-family: 'Qwigley';">00</div>
+                </div>
+
+                <div class="circle" style="--clr: #04fc43">
+                    <div class="dots sec_dot"></div>
+
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="ss"></circle>
+
+                    </svg>
+
+                    <div id="seconds" style="font-family: 'Qwigley';">00</div>
+                </div>
+                <div class="ap">
+                    <div id="ampm" style="font-family: 'Qwigley';">AM</div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="clock-inner">
-
-
-        <div class="heading">
-            <h1 class="h"><span>Digital Clock</span></h1>
-        </div>
-        <br><br>
-        <div class="main">
-
-            <div class="squares">
-
-                <div id="hour"></div>
-
-                <div id="minute"></div>
-                <!-- <span class="dot"></span> -->
-                <div id="seconds"></div>
-            </div>
-
-            <div class="rectangles">
-
-                <div id="day"></div>
-
-                <div id="date"></div>
-
-            </div>
 
         </div>
 
-    </div>
+        <h1 class="digital-clock">Digital Clock</h1>
 
 
     <script src="text.js"></script>
-
-
-
-
-
 </body>
 
 </html>
