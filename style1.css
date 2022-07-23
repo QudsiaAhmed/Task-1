@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*,
+*::before,
+*::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 50vh;
+    background-image: url(background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.headings {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 7rem;
+}
+
+.h {
+    font-family: 'Dosis', sans-serif;
+}
+
+/* span {
+    background-color: rgba(239, 204, 204, 0.3);
+}
+ */
+
+.container {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #d8d8d8; */
+}
+
+.container .frame1 {
+    width: 250px;
+    height: 400px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuLi4GjRzXB14owGvJMOwQmU2IJK4M0CQFww&usqp=CAU);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #999;
+}
+
+.container .frame1 .frame2 {
+    width: 150px;
+    height: 450px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlhp1kS1XUMvXbrll_SBQQEg3OMNuPwVVJxg&usqp=CAU);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -6px 0px 10px -7px #000;
+}
+
+.container .frame1 .frame2 .clock {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: 40px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #ca8b03;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.container .frame1 .frame2 .clock .time {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    transform: rotate(var(--rotate));
+    --rotate: 0;
+}
+
+.container .frame1 .frame2 .clock .time1 {
+    --rotate: 30deg;
+}
+
+.container .frame1 .frame2 .clock .time2 {
+    --rotate: 60deg;
+}
+
+.container .frame1 .frame2 .clock .time3 {
+    --rotate: 90deg;
+}
+
+.container .frame1 .frame2 .clock .time4 {
+    --rotate: 120deg;
+}
+
+.container .frame1 .frame2 .clock .time5 {
+    --rotate: 150deg;
+}
+
+.container .frame1 .frame2 .clock .time6 {
+    --rotate: 180deg;
+}
+
+.container .frame1 .frame2 .clock .time7 {
+    --rotate: 210deg;
+}
+
+.container .frame1 .frame2 .clock .time8 {
+    --rotate: 240deg;
+}
+
+.container .frame1 .frame2 .clock .time9 {
+    --rotate: 270deg;
+}
+
+.container .frame1 .frame2 .clock .time10 {
+    --rotate: 300deg;
+}
+
+.container .frame1 .frame2 .clock .time11 {
+    --rotate: 330deg;
+}
+
+.container .frame1 .frame2 .clock .time12 {
+    --rotate: 360deg;
+}
+
+.container .frame1 .frame2 .clock .hand {
+    position: absolute;
+    bottom: 50%;
+    transform-origin: bottom;
+    transform: rotate(calc(var(--rotate)*1deg));
+    --rotate: 0deg;
+}
+
+.container .frame1 .frame2 .clock .hour {
+    width: 5px;
+    height: 45px;
+    background-color: black;
+}
+
+.container .frame1 .frame2 .clock .min {
+    width: 3px;
+    height: 60px;
+    background-color: black;
+}
+
+.container .frame1 .frame2 .clock .sec {
+    width: 2px;
+    height: 70px;
+    background-color: black;
+}
+
+.container .frame1 .frame2 .clock::after {
+    content: "";
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.container .frame1 .frame2 .handle {
+    width: 15px;
+    height: 150px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuLi4GjRzXB14owGvJMOwQmU2IJK4M0CQFww&usqp=CAU);
+    margin-top: -10px;
+    position: relative;
+    animation: handle 2s linear infinite;
+    transform-origin: top;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container .frame1 .frame2 .handle::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 100%;
+    left: -12px;
+    margin-top: -60px;
+    animation: cross 2.5s linear infinite;
+}
+
+@keyframes handle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes cross {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+.clock-inner{
+    height: 80vh;
+    background-image: url(clock2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 7rem;
+}
+
+.h {
+    font-family: 'Dosis', sans-serif;
+}
+
+span {
+    background-color: rgba(239, 204, 204, 0.3);
+}
+
+.main {
+    height: 40%;
+    width: 45%;
+    background-color: rgba(239, 204, 204, 0.3);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.squares {
+    height: 45%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rectangles {
+    height: 55%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#hour,
+#minute,
+#seconds {
+    height: 60%;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.5rem;
+}
+
+#date,
+#day {
+    height: 40%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.5rem;
+}
