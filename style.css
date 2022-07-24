@@ -13,10 +13,26 @@
 
   }
 
+
+#p1{
+    padding-bottom: 25rem;
+    color: #fff;
+    font-size: 2rem;
+    padding-left: .5rem;
+    padding-right: 85rem;
+}
+#demo{
+    padding-bottom: 25rem;
+    color: #fff;
+    /* padding-left: 5rem; */
+    font-size: 2rem;
+    
+    
+}
   .inner {
       padding-bottom: 40rem;
       color: #fff;
-      padding-right: 50rem;
+      padding-right: 56rem;
       font-size: 2rem;
       text-shadow: 1px 1px 2px black, 0 0 25px #ff2972, 0 0 5px #ff2972;
 
@@ -37,8 +53,9 @@
       color: #fff;
       text-decoration: underline;
       padding-top: 28rem;
+      /* padding-left: 22rem; */
       gap: 2px;
-      padding-right: 75rem;
+      padding-right: 74rem;
       text-shadow: 1px 1px 2px black, 0 0 25px #04fc43, 0 0 5px #04fc43;
   }
 

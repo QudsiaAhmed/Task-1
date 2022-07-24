@@ -61,3 +61,22 @@ setInterval(() => {
     mn.style.transform = `rotateZ(${mm}deg)`;
     sc.style.transform = `rotateZ(${ss}deg)`;
 })
+
+
+
+
+
+var today = new Date();
+
+var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+document.getElementById("p1").innerHTML = date;
+
+
+
+
+
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const d = new Date();
+let day = weekday[d.getDay()];
+document.getElementById("demo").innerHTML = day;
